@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#habits-section {
+    margin-right: 20px;
+    /* Space between the textboxes and calendar */
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add to existing CSS */
+.delete-button {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.textbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    min-width: 300px;
+}
+
+.month {
+    display: flex;
+    align-items: center;
+}
+
+.month h1 {
+    margin: 0 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.weekdays,
+.days-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* 7 columns for 7 days of the week */
+    width: 100%;
+    text-align: center;
+}
+
+.weekdays {
+    font-weight: bold;
+}
+
+.weekdays div,
+.days-container .day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+    overflow: hidden;
+    /* Prevent cell expansion */
+    text-overflow: ellipsis;
+    /* Add ellipsis for overflow text */
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.selected {
+    border-color: blue;
+    /* Highlight selected textbox */
+}
+
+.achieved {
+    background-color: lightgreen;
+    /* Change background color to green */
+}
+
+.page-container {
+    display: flex;
+}
+
+
+.resetsection {
+    margin-top: 20px;
+}
